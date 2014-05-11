@@ -21,7 +21,10 @@ plot3<-function(){
   
  png(filename="plot3.png",width=480,height=480,bg="transparent")
   
-    plot(dataset$Date_time,dataset$Sub_metering_1,main="",xlab="",
+ par(font.lab=2,font.axis=2,font.main=2,font=2,lwd=1.2,
+    cex.main=1.1,cex.axis=0.9,cex.lab=0.9)
+  
+ plot(dataset$Date_time,dataset$Sub_metering_1,main="",xlab="",
        ylab="Energy sub metering", type="l",col="black")
   
     lines(dataset$Date_time,dataset$Sub_metering_2,col="red")

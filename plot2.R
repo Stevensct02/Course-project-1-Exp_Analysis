@@ -16,8 +16,11 @@ plot2<-function(){
   
   png(filename="plot2.png",width=480,height=480,bg="transparent")
   
-   plot(dataset$Date_time,dataset$Global_active_power,main="",xlab="",
+  par(font.lab=2,font.axis=2,font.main=2,ps=13,lwd=1.2,
+      cex.main=1.1,cex.axis=0.9,cex.lab=0.9)
+    
+  plot(dataset$Date_time,dataset$Global_active_power,main="",xlab="",
        ylab="Global Active Power (Kilowatts)", type="l",col="black")
   
-  dev.off()
+ dev.off()
  }

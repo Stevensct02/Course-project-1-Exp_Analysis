@@ -20,7 +20,7 @@ plot4<-function(){
     
  png(filename="plot4.png",width=480,height=480,bg="transparent")
   
-        par(mfcol=c(2,2))
+        par(mfcol=c(2,2),font.lab=2,font.axis=2,font.main=2,font=2,lwd=1.2)
 
  
         #Plot 2:
