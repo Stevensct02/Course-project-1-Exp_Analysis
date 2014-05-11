@@ -8,9 +8,11 @@ plot1<-function(){
   
   png(filename="plot1.png",width=480,height=480,bg="transparent")
     
-    hist(as.numeric(dataset$Global_active_power),main="Global Active Power",
-         xlab="Global Active Power (Kilowatts)",col="Red")
-  
+    par(font.lab=2,font.axis=2,bty="l",ps=13,cex.main=1.4,cex.axis=0.9,cex.lab=0.9)
+   
+    hist(as.numeric(dataset$Global_active_power),xlab="Global Active Power (Kilowatts)",
+         main="Global Active Power", col="Red")
+ 
   dev.off()
 
 }
