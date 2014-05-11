@@ -4,14 +4,14 @@ plot1<-function(){
     
   dataset<-read.table(file="household_power_consumption.txt",header=TRUE, sep=";")
   
-  #png(filename="plot1.png",width=480,height=480,bg="transparent")
+  png(filename="plot1.png",width=480,height=480,bg="transparent")
     
-    par(font.lab=2,font.axis=2,font.main=2,bty="l",ps=13,lwd=1.2,
+    par(font.lab=2,font.axis=2,font.main=2,bty="l",ps=13,
         cex.main=1.1,cex.axis=0.9,cex.lab=0.9)
    
     hist(as.numeric(dataset$Global_active_power),xlab="Global Active Power (Kilowatts)",
          main="Global Active Power", col="Red")
  
-  #dev.off()
+  dev.off()
 
 }
